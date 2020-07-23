@@ -40,10 +40,10 @@ module.exports = {
       version: 'detect',
     },
   },
+  ignorePatterns: ['**/*.scss.d.ts', 'build/*'],
   overrides: [
     {
       files: ['*.js'],
-      excludeFiles: ['*.scss.d.ts'],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
       },
