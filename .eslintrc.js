@@ -43,6 +43,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.js'],
+      excludeFiles: ['*.scss.d.ts'],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
       },
