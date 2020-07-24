@@ -6,22 +6,19 @@ interface Props {
   user: string;
 }
 
-const Profile: FunctionalComponent<Props> = (props: Props) => {
+export const Profile: FunctionalComponent<Props> = (props: Props) => {
   const { user } = props;
   const [time, setTime] = useState<number>(Date.now());
   const [count, setCount] = useState<number>(0);
 
-  // gets called when this route is navigated to
   useEffect(() => {
     const timer = window.setInterval(() => setTime(Date.now()), 1000);
 
-    // gets called just before navigating away from the route
     return () => {
       clearInterval(timer);
     };
   }, []);
 
-  // update the current time
   const increment = () => {
     setCount(count + 1);
   };
@@ -39,5 +36,3 @@ const Profile: FunctionalComponent<Props> = (props: Props) => {
     </div>
   );
 };
-
-export default Profile;

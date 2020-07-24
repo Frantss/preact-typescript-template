@@ -1,16 +1,16 @@
 import { FunctionalComponent, h } from 'preact';
 import { Route, Router, RouterOnChangeArgs } from 'preact-router';
 
-import Home from '../routes/home';
-import Profile from '../routes/profile';
-import NotFoundPage from '../routes/notfound';
-import Header from './header';
+import { Home } from '../routes/home';
+import { Profile } from '../routes/profile';
+import { NotFound } from '../routes/notfound';
+import { Header } from './header';
 
 if ((module as any).hot) {
   require('preact/debug');
 }
 
-const App: FunctionalComponent = () => {
+export const App: FunctionalComponent = () => {
   let currentUrl: string;
   const handleRoute = (e: RouterOnChangeArgs) => {
     currentUrl = e.url;
@@ -23,10 +23,8 @@ const App: FunctionalComponent = () => {
         <Route path='/' component={Home} />
         <Route path='/profile/' component={Profile} user='me' />
         <Route path='/profile/:user' component={Profile} />
-        <NotFoundPage default />
+        <NotFound default />
       </Router>
     </div>
   );
 };
-
-export default App;

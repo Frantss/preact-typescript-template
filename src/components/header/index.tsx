@@ -2,7 +2,7 @@ import { FunctionalComponent, h } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style.scss';
 
-const Header: FunctionalComponent = () => {
+export const Header: FunctionalComponent = () => {
   return (
     <header class={style.header}>
       <h1>Preact App</h1>
@@ -20,5 +20,3 @@ const Header: FunctionalComponent = () => {
     </header>
   );
 };
-
-export default Header;
