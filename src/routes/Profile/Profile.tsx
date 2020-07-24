@@ -1,12 +1,12 @@
 import { FunctionalComponent, h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-import style from './style.scss';
+import style from './Profile.module.scss';
 
 interface Props {
   user: string;
 }
 
-export const Profile: FunctionalComponent<Props> = (props: Props) => {
+const Profile: FunctionalComponent<Props> = (props: Props) => {
   const { user } = props;
   const [time, setTime] = useState<number>(Date.now());
   const [count, setCount] = useState<number>(0);
@@ -36,3 +36,5 @@ export const Profile: FunctionalComponent<Props> = (props: Props) => {
     </div>
   );
 };
+
+export default Profile;

@@ -40,7 +40,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  ignorePatterns: ['**/*.scss.d.ts', 'build/*'],
+  ignorePatterns: ['**/*.scss.d.ts', 'build/*', '*.config.js'],
   overrides: [
     {
       files: ['*.js'],
