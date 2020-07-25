@@ -9,7 +9,7 @@
     "dev": "preact watch",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' && stylelint '**/*.scss'",
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix && stylelint '**/*.scss' --fix",
-    "test": "jest ./tests"
+    "test": "jest ./"
   },
   "husky": {
     "hooks": {
@@ -58,6 +58,7 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0",
+    "ts-jest": "^26.1.3",
     "typescript": "^3.7.5"
   }
 }

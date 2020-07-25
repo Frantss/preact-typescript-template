@@ -1,5 +1,8 @@
 module.exports = {
   preset: 'jest-preset-preact',
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
   setupFiles: [
     '<rootDir>/src/tests/setupTests.js',
     '<rootDir>/src/tests/browserMocks.js',
