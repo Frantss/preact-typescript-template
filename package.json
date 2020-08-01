@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "snowpack-preact-typescript",
+  "name": "preact-typescript-template",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,8 @@
     "dev": "preact watch",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' && stylelint '**/*.scss'",
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix && stylelint '**/*.scss' --fix",
-    "test": "jest ./"
+    "test": "jest ./src",
+    "test:watch": "jest ./src --watch"
   },
   "husky": {
     "hooks": {
@@ -23,7 +24,6 @@
   },
   "dependencies": {
     "preact": "^10.3.1",
-    "preact-jsx-chai": "^3.0.0",
     "preact-markup": "^2.0.0",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1"
@@ -49,6 +49,7 @@
     "lint-staged": "^10.0.7",
     "node-sass": "^4.14.1",
     "preact-cli": "^3.0.0",
+    "preact-jsx-chai": "^2.3.2",
     "prettier": "^1.19.1",
     "sass-loader": "^9.0.2",
     "sirv-cli": "^1.0.0-next.3",

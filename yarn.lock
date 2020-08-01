@@ -9197,12 +9197,12 @@ preact-cli@^3.0.0:
     workbox-strategies "^5.1.3"
     workbox-webpack-plugin "^5.1.3"
 
-preact-jsx-chai@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/preact-jsx-chai/-/preact-jsx-chai-3.0.0.tgz#715bd63d239a5c9ce86d7b60d29082b193799b0c"
-  integrity sha512-LHjW1gs7IACIN3n5Hx2uKQZ17MBIGOfeZf/BNG/hwvJDJuM+QZVApOPp4ESv20DiyRvxnPK5wBlYvOjQKLeN0A==
+preact-jsx-chai@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/preact-jsx-chai/-/preact-jsx-chai-2.3.2.tgz#3d58fd60b7a85f38b39d19b408a62dbaca8158bb"
+  integrity sha512-LIvtYOUgC7bdXnylosrRYM//06lsdIvnfmkM3vz6rzCSTMzIU30//9s/jQndA2/XxlQJxkR/H2VNYhLX9zRSiw==
   dependencies:
-    preact-render-to-string "^5.0.4"
+    preact-render-to-string "^4.1.0"
 
 preact-markup@^2.0.0:
   version "2.0.0"
@@ -9216,7 +9216,7 @@ preact-render-to-string@^4.1.0:
   dependencies:
     pretty-format "^3.8.0"
 
-preact-render-to-string@^5.0.4, preact-render-to-string@^5.1.4:
+preact-render-to-string@^5.1.4:
   version "5.1.10"
   resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-5.1.10.tgz#cce03d73b166c550148af9dedc9e06fdf6820f8a"
   integrity sha512-40svy7NDe5Qe0ymdsIC11f0hZb05MeTSUqqIaWJ5DEFCh/sF86KcpRW0kN/ymGYDVVUCfv9qFrVuLCXR7aQxgQ==
