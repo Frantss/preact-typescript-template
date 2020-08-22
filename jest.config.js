@@ -1,11 +1,11 @@
 module.exports = {
   preset: 'jest-preset-preact',
   transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.[jt]sx?$': 'babel-jest',
   },
   setupFiles: [
-    '<rootDir>/src/tests/setupTests.js',
     '<rootDir>/src/tests/browserMocks.js',
+    '<rootDir>/src/tests/fileMocks.js',
   ],
   testURL: 'http://localhost:8080',
   moduleNameMapper: {

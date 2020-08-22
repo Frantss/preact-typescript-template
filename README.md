@@ -31,5 +31,6 @@ Personal template for Preact + Typescript with all kind of additional addons.
   [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure) for
   your tests
 - `yarn test:watch`: Run tests in watch mode
+- `yarn test:coverage`: Run tests in coverage mode
 
 For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
