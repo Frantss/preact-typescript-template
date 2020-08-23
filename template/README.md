@@ -1,25 +1,4 @@
-# preact-typescript-template
-
-My personal template for Preact + Typescript with extra addons.
-
-## Installation
-
-```shell
-npx preact-cli create Frantss/preact-typescript-template <project-name>
-```
-
-### Options
-
-Preact-CLI options:
-
-```shell
-  --name        The application name.
-  --cwd         A directory to use instead of $PWD.
-  --force       Force option to create the directory for the new app  [boolean] [default: false]
-  --yarn        Installs dependencies with yarn.                      [boolean] [default: false]
-  --git         Initialize version control using git.                 [boolean] [default: false]
-  --install     Installs dependencies.                                [boolean] [default: true]
-```
+# {{ name }}
 
 ## Includes
 

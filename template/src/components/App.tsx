@@ -13,6 +13,7 @@ if ((module as any).hot) {
 
 const App = () => {
   let currentUrl: string;
+
   const handleRoute = (e: RouterOnChangeArgs) => {
     currentUrl = e.url;
   };

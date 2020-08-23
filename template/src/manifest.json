@@ -1,6 +1,6 @@
 {
-  "name": "snowpack-preact-typescript",
-  "short_name": "snowpack-preact-typescript",
+  "name": "{{ name }}",
+  "short_name": "{{ name }}",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
@@ -8,12 +8,12 @@
   "theme_color": "#673ab8",
   "icons": [
     {
-      "src": "src/assets/icons/android-chrome-192x192.png",
+      "src": "/assets/icons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "src/assets/icons/android-chrome-512x512.png",
+      "src": "/assets/icons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
