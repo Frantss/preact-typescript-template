@@ -1,9 +1,10 @@
 import { h } from 'preact';
 import { Route, Router, RouterOnChangeArgs } from 'preact-router';
 
-import Home from '../routes/Home';
-import Profile from '../routes/Profile/Profile';
-import NotFound from '../routes/NotFound';
+import Home from '@routes/Home';
+import Profile from '@routes/Profile/Profile';
+import NotFound from '@routes/NotFound';
+
 import { Header } from './Header';
 
 if ((module as any).hot) {
@@ -13,7 +14,6 @@ if ((module as any).hot) {
 const App = () => {
   let currentUrl: string;
   const handleRoute = (e: RouterOnChangeArgs) => {
-    currentUrl = e.url;
     currentUrl = e.url;
   };
 
