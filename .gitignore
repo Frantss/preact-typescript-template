@@ -1,12 +1,2 @@
-# Miscelaneous
-node_modules
-*.log
-
-# Generated
-coverage
-build
-dist
-size-plugin.json
-
 # VSC
 .history
