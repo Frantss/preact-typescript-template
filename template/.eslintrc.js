@@ -1,8 +1,15 @@
 module.exports = {
   env: {
     browser: true,
+    'cypress/globals': true,
   },
-  plugins: ['@typescript-eslint'],
+  plugins: [
+    '@typescript-eslint',
+    'prettier',
+    'react',
+    'react-hooks',
+    'cypress',
+  ],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -11,6 +18,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
+    'plugin:cypress/recommended',
     'prettier/@typescript-eslint',
     'prettier/react',
   ],
@@ -40,7 +48,13 @@ module.exports = {
       version: 'detect',
     },
   },
-  ignorePatterns: ['**/*.scss.d.ts', 'build/*', '*.config.js'],
+  ignorePatterns: [
+    '**/*.scss.d.ts',
+    'build/*',
+    '*.config.js',
+    'cypress/**/*.js',
+    'cypress/**/*.d.ts',
+  ],
   overrides: [
     {
       files: ['*.js'],

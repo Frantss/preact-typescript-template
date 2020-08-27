@@ -7,6 +7,7 @@
 - [**TypeScript**](https://www.typescriptlang.org/docs/): You need types
 - [**Jest**](https://jestjs.io/docs/en/getting-started): Don't forget to write tests
   - [**Preact Testing Library**](https://preactjs.com/guide/v10/preact-testing-library): Great library to test all of your components and hooks
+- [**Cypress**](https://www.cypress.io/): For end-to-end tests
 - [**Webpack**](https://webpack.js.org/): For bundling and other great features
 - [**Sass**](https://sass-lang.com/documentation):
   - Autoprefixer
@@ -34,5 +35,6 @@
 - `yarn test`: Run tests
 - `yarn test:watch`: Run tests in watch mode
 - `yarn test:coverage`: Run tests in coverage mode
+- `yarn test:e2e`: Run all cypress tests
 
 For detailed explanation on how things work, checkout the [Preact-CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).

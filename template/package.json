@@ -7,11 +7,12 @@
     "build": "preact build",
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' || stylelint '**/*.scss'",
-    "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix || stylelint '**/*.scss' --fix",
+    "lint": "eslint './**/*.{js,jsx,ts,tsx}' || stylelint '**/*.scss'",
+    "lint:fix": "eslint './**/*.{js,jsx,ts,tsx}' --fix || stylelint '**/*.scss' --fix",
     "test": "jest ./src",
     "test:watch": "jest ./src --watch",
-    "test:coverage": "jest ./src --coverage"
+    "test:coverage": "jest ./src --coverage",
+    "test:e2e": "cypress run --quiet"
   },
   "husky": {
     "hooks": {
@@ -38,8 +39,10 @@
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "babel-jest": "^26.3.0",
+    "cypress": "^5.0.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
