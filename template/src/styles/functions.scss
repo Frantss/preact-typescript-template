@@ -1,0 +1,7 @@
+@function get-color($color, $alpha: null) {
+  @if $alpha {
+    @return rgba(var(--#{$color}-rgb), $alpha);
+  }
+
+  @return var(--#{$color});
+}

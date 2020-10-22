@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.container {
+  padding: $spacing-md;
+  margin: $spacing-base;
+  margin-top: $spacing-xss;
+}
+
+.header {
+  padding: $spacing-sm;
+  margin: $spacing-sm;
+}
+
+.body {
+  padding: $spacing-sm;
+  margin: $spacing-sm;
+  background-color: var(--primary);
+  // border: 2px solid var(--secondary);
+  // box-shadow: 1px 1px 5px var(--secondary);
+}

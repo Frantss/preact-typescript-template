@@ -4,6 +4,9 @@ declare namespace HomeModuleScssNamespace {
   }
 }
 
-declare const HomeModuleScssModule: HomeModuleScssNamespace.IHomeModuleScss;
+declare const HomeModuleScssModule: HomeModuleScssNamespace.IHomeModuleScss & {
+  /** WARNING: Only available when `css-loader` is used without `style-loader` or `mini-css-extract-plugin` */
+  locals: HomeModuleScssNamespace.IHomeModuleScss;
+};
 
 export = HomeModuleScssModule;

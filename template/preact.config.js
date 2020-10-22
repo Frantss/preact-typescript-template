@@ -13,11 +13,20 @@ export default {
    **/
 
   webpack(config, env, helpers, options) {
+    config.module.rules[4].include = [
+      ...config.module.rules[4].include,
+      env.source('layouts'),
+    ];
+
+    config.module.rules[5].exclude = [
+      ...config.module.rules[5].exclude,
+      env.source('layouts'),
+    ];
+
     config.module.rules[4].use.splice(1, 0, {
       loader: '@teamsupercell/typings-for-css-modules-loader',
       options: {
         formatter: 'prettier',
-        disableLocalsExport: true,
       },
     });
 
@@ -30,11 +39,12 @@ export default {
       new TsconfigPathsPlugin(),
     ];
 
-    // Use any `index` file, not just index.js
-    config.resolve.alias['preact-cli-entrypoint'] = resolve(
-      process.cwd(),
-      'src',
-      'index',
-    );
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      react: 'preact/compat',
+      'react-dom/test-utils': 'preact/test-utils',
+      'react-dom': 'preact/compat',
+      'preact-cli-entrypoint': resolve(process.cwd(), 'src', 'index'),
+    };
   },
 };

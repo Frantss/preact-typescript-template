@@ -52,6 +52,7 @@ module.exports = {
     '**/*.scss.d.ts',
     'build/*',
     '*.config.js',
+    '.eslintrc.js',
     'cypress/**/*.js',
     'cypress/**/*.d.ts',
   ],

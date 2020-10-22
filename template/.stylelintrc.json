@@ -2,12 +2,18 @@
   "extends": [
     "stylelint-config-standard",
     "stylelint-config-sass-guidelines",
-    "stylelint-config-recess-order"
+    "stylelint-config-recess-order",
+    "stylelint-prettier/recommended"
   ],
-  "plugins": ["stylelint-order", "stylelint-scss"],
+  "plugins": ["stylelint-order", "stylelint-scss", "stylelint-prettier"],
   "rules": {
+    "prettier/prettier": true,
     "order/properties-alphabetical-order": null,
     "selector-no-qualifying-type": null,
-    "selector-max-id": null
+    "selector-max-id": null,
+    "color-named": "always-where-possible",
+    "selector-class-pattern": "[a-z]+((\\d)|([A-Z0-9][a-z0-9]+))*([A-Z])?",
+    "max-nesting-depth": 3,
+    "scss/at-extend-no-missing-placeholder": null
   }
 }
